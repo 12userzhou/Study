@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合并单元格</title>
+</head>
+<body>
+    <!-- 合并单元格的步骤：
+     1.明确合并的目标
+     2，保留最最左最上的单元格，添加属性（取值是数字，表示需要合并的单元格数量）
+            跨行合并，保留最上的单元格，添加属性 rowspan
+            跨列合并，保留最左的单元格，添加属性 colspan
+    3.删除其他单元格 -->
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th>语文</th>
+            <th>数学</th>
+            <th>总分</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>99</td>
+            <td rowspan="2">100</td>
+            <td>199</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>98</td>
+            <!-- <td>100</td> -->
+            <td>198</td>
+        </tr>
+        <tr>
+            <td>总结</td>
+            <td colspan="3">全市第一</td>
+            <!-- <td>全市第一</td>
+            <td>全市第一</td> -->
+        </tr>
+      </table>
+</body>
+</html>
