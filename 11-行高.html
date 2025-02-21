@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行高</title>
+    <style>
+        p {
+            /* line-height: 50px; */
+            /* 行高值是数字，表示是当前标签大小的倍数 */
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <p>当你在使用 Git 时遇到这个错误信息，是因为 Git 2.35.2 及更高版本引入了一项安全特性，它会检查仓库目录的所有权是否与当前用户匹配。如果不匹配，就会抛出 detected dubious ownership 错误。错误原因分析从你给出的错误信息来看，仓库 D:/develop/web_study 的所有者是 BUILTIN/Administrators 组，而当前用户是 \ (S-1-5-21-429047817-2076869983-1892321705-1001)，所有权不一致，从而触发了 Git 的安全检查。 解决方案 Git 已经在错误信息中提供了解决办法，你可以通过执行以下命令，将该仓库目录添加到全局安全目录列表中，以此绕过这个安全检查：</p>
+</body>
+</html>
